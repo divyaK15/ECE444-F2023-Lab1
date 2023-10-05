@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = "hardString"
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = StringField('What is your UofT Email Address?', validators=[DataRequired(), Email()])
+    email = StringField('What is your UofT Email Address?', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 
